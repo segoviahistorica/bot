@@ -1,0 +1,41 @@
+.carousel-item {
+    max-height: 92vh;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 40px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.sticky-footer {
+    top: 100%;
+    position: sticky;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%
+    }
+}
+
+.img-animation {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
+}
