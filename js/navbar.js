@@ -1,19 +1,18 @@
 class Navbar extends HTMLElement {
     constructor() {
         super()
-        const item_active = ["", "", "", ""]
+        let item_active = ["", "", "", ""]
         const pages = ["index", "objetivos", "resultados", "contacto"]
 
         for (var i = 0; i < pages.length; i++) {
             if (window.location.pathname.includes(pages[i])) item_active[i] = "active"
         }
 
-        //aria-current="page"
         this.innerHTML = `
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#!">
-                    <img src="assets/logo_twitter.jpg" class="rounded-circle" alt="" width="30" height="30"
+                    <img src="assets/logo_twitter.jpg" class="rounded-circle me-2" alt="" width="30" height="30"
                         class="d-inline-block align-text-top">
                     Segovia HistóRica
                 </a>
