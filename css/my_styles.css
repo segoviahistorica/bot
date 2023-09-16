@@ -39,3 +39,7 @@ body {
     animation-range: entry 15% cover 50%;
     animation-fill-mode: both;
 }
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
