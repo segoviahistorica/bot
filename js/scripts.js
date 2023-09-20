@@ -48,7 +48,7 @@ function createCarouselItem(img_id, img_metadata, iter) {
     // Si es el primero que se crea tiene que tener la clase "active". [doc de Bootstrap]
     if (iter == 0) div_carousel_item.classList.add("active")
 
-    div_carousel_item.appendChild(createCarouselImage(img_id, img_metadata["Link"]))
+    div_carousel_item.appendChild(createCarouselImage(img_id, img_metadata["Link"], img_metadata["Autor"]))
     div_carousel_item.appendChild(createCarouselCaption(img_metadata["Autor"], img_metadata["Nombre"]))
 
     return div_carousel_item
@@ -78,14 +78,16 @@ function createCarouselCaption(author, name) {
  * Crea la imagen clickable 
  * @param {String} img_id - ID en la Fototeca
  * @param {String} link - Link permanente a la imagen en la Fototeca
+ * @param {String} author - Autor de la imagen para construir el alt text
 */
-function createCarouselImage(img_id, link) {
+function createCarouselImage(img_id, link, author) {
 
     let img = document.createElement("img")
     let img_href = document.createElement("a")
     img_href.href = link
     img_href.target = "_blank"
-    img.src = "assets/" + img_id + ".png"
+    img.src = "assets/".concat(img_id, ".png")
+    img.alt = "Imagen de Segovia del autor ".concat(author)
     img.classList.add("d-block", "w-100")
     img_href.appendChild(img)
 
