@@ -75,7 +75,7 @@ function createCarouselCaption(author, name) {
 }
 
 /** 
- * Crea la imagen clickable 
+ * Crea la imagen clickable para acceder a la web de la Fototeca donde se encuentra
  * @param {String} img_id - ID en la Fototeca
  * @param {String} link - Link permanente a la imagen en la Fototeca
  * @param {String} author - Autor de la imagen para construir el alt text
