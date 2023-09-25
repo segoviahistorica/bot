@@ -19,106 +19,92 @@
     <navbar-component></navbar-component>
 
     <main>
-        <div class="container">
-            <section class="py-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col">
-                            <h1 class="fw-bold">¿Qué es Segovia HistóRica?</h1>
-                            <div class="row">
-                                <div class="col-lg-8 d-flex lead align-items-center">
-                                    <p class="lead mb-0">
-                                        Un proyecto de difusión del patrimonio cultural de la
-                                        provincia de Segovia que auna <span class="fw-bold fs-4">HISTORIA</span>,
-                                        <span class="fw-bold fs-4">REDES SOCIALES</span> y
-                                        <span class="fw-bold fs-4">TECNOLOGÍA</span>
-                                    </p>
-                                </div>
-                                <img src="assets/collage.png"
-                                    alt="Collage de emoticonos de historia, redes y tecnología"
-                                    class="col-lg-4 pt-lg-0 pt-3 img-fluid">
+        <div class="container my-5">
+            <section>
+                <h1 class="fw-bold">¿Qué es Segovia HistóRica?</h1>
+                <div class="row">
+                    <div class="col-lg-8 d-flex lead align-items-center">
+                        <p class="lead mb-0">
+                            Un proyecto de difusión del patrimonio cultural de la
+                            provincia de Segovia que auna <span class="fw-bold fs-4">HISTORIA</span>,
+                            <span class="fw-bold fs-4">REDES SOCIALES</span> y
+                            <span class="fw-bold fs-4">TECNOLOGÍA</span>
+                        </p>
+                    </div>
+                    <img src="assets/collage.png" alt="Collage de emoticonos de historia, redes y tecnología"
+                        class="col-lg-4 pt-lg-0 pt-3 img-fluid">
+                </div>
+            </section>
+            <section>
+                <div class="row py-4">
+                    <img src="assets/iphone14view.png" alt="Vista del bot en Iphone14"
+                        class="img-fluid col-lg-8 order-2 order-lg-1 img-animation pt-3 pt-lg-0">
+                    <div class="col-lg-4 order-lg-2 d-flex align-items-center">
+                        <h2 class="text-lg-end mb-0">Se trata de un procedimiento automático o bot,
+                            programado para publicar una foto al día de la provincia de Segovia en Twitter
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row py-4">
+                    <div class="col-lg-5 d-flex align-items-center">
+                        <h2>Son descargadas del catálogo de
+                            la
+                            <a href="https://ipce.culturaydeporte.gob.es/documentacion/fototeca.html" target="_blank"
+                                rel="noopener noreferrer" class="link-secondary">Fototeca</a>
+                            del <a href="https://ipce.culturaydeporte.gob.es/inicio.html" target="_blank"
+                                rel="noopener noreferrer" class="link-secondary">Instituto del
+                                Patrimonio Cultural de
+                                España</a>
+                        </h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <div id="carouselImagesFototeca" class="carousel slide carousel-fade pt-3 pt-lg-0"
+                            data-bs-ride="carousel" style="height: auto;">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselImagesFototeca" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselImagesFototeca" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselImagesFototeca" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
                             </div>
-
-                            <div class="row py-4">
-                                <img src="assets/iphone14view.png" alt="Vista del bot en Iphone14"
-                                    class="img-fluid col-lg-8 order-2 order-lg-1 img-animation pt-3 pt-lg-0">
-                                <div class="col-lg-4 order-lg-2 d-flex align-items-center">
-                                    <h2 class="text-lg-end mb-0">Se trata de un procedimiento automático o bot,
-                                        programado para publicar una foto al día de la provincia de Segovia en Twitter
-
-                                    </h2>
-
-                                </div>
+                            <div class="carousel-inner">
                             </div>
-
-                            <div class="row py-4">
-                                <div class="col-lg-5 d-flex align-items-center">
-                                    <h2>Son descargadas del catálogo de
-                                        la
-                                        <a href="https://ipce.culturaydeporte.gob.es/documentacion/fototeca.html"
-                                            target="_blank" rel="noopener noreferrer"
-                                            class="link-secondary">Fototeca</a>
-                                        del <a href="https://ipce.culturaydeporte.gob.es/inicio.html" target="_blank"
-                                            rel="noopener noreferrer" class="link-secondary">Instituto del
-                                            Patrimonio Cultural de
-                                            España</a>
-                                    </h2>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div id="carouselImagesFototeca" class="carousel slide carousel-fade pt-3 pt-lg-0"
-                                        data-bs-ride="carousel" style="height: auto;">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselImagesFototeca"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselImagesFototeca"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselImagesFototeca"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                        </div>
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselImagesFototeca" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselImagesFototeca" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row py-4">
-                                <img src="assets/androidview.png" alt="Vista del bot en móvil Android"
-                                    class="img-fluid col-lg-9 order-2 order-lg-1 img-animation pt-3 pt-lg-0">
-                                <div class="col-lg-3 d-flex order-lg-2 align-items-center">
-                                    <h2 class="text-lg-end mb-0"><span id="number_media_posts"></span>
-                                        fotografías
-                                        publicadas
-                                        desde el 1 de junio de 2023
-                                    </h2>
-                                </div>
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselImagesFototeca"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselImagesFototeca"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-
-                <section>
-                    <div class="container my-2">
-                        <div class="row justify-content-center">
-                            <div class="col">
-                                <a class="twitter-timeline" data-dnt="true"
-                                    href="https://twitter.com/segoviahistbot?ref_src=twsrc%5Etfw">Tweets by
-                                    segoviahistbot</a>
-                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                            </div>
-                        </div>
+            </section>
+            <section>
+                <div class="row py-4">
+                    <img src="assets/androidview.png" alt="Vista del bot en móvil Android"
+                        class="img-fluid col-lg-9 order-2 order-lg-1 img-animation pt-3 pt-lg-0">
+                    <div class="col-lg-3 d-flex order-lg-2 align-items-center">
+                        <h2 class="text-lg-end mb-0"><span id="number_media_posts"></span>
+                            fotografías
+                            publicadas
+                            desde el 1 de junio de 2023
+                        </h2>
                     </div>
-                </section>
+                </div>
+            </section>
+            <section>
+                <a class="twitter-timeline" data-dnt="true"
+                    href="https://twitter.com/segoviahistbot?ref_src=twsrc%5Etfw">Tweets by
+                    segoviahistbot</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
     </main>
 
     <!-- Footer-->
