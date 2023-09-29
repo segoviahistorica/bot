@@ -2,7 +2,7 @@ class Footer extends HTMLElement {
     constructor() {
         super()
         this.innerHTML = `
-            <footer class="sticky-footer py-4 bg-dark">
+            <footer class="sticky-footer py-4 bg-dark fw-light">
             <div class="container">
                 <p class="m-0 text-center text-muted">&copy; 2023 Segovia HistóRica</p>
             </div>
