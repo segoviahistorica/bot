@@ -12,7 +12,7 @@ class Navbar extends HTMLElement {
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#!">
-                    <img src="assets/logo_twitter.jpg" class="rounded-circle me-2" alt="" width="30" height="30"
+                    <img src="assets/logo_twitter.webp" class="rounded-circle me-2" alt="" width="30" height="30"
                         class="d-inline-block align-text-top">
                     Segovia HistóRica
                 </a>
