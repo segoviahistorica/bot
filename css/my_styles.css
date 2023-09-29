@@ -1,3 +1,7 @@
+.container section:not(:first-child) {
+    margin-top: 1rem !important
+}
+
 .carousel-item {
     max-height: 92vh;
 }
@@ -42,4 +46,14 @@ body {
 
 .navbar-toggler:focus {
     box-shadow: none;
+}
+
+.container>section {
+    margin-right: 0.25rem !important;
+    margin-left: 0.25rem !important;
+}
+
+.explicacion>span {
+    font-weight: 700 !important;
+    font-size: calc(1.275rem + 0.3vw) !important;
 }
