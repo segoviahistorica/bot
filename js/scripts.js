@@ -19,7 +19,9 @@ function loadCarouselImages() {
         .then(data => {
 
             const keys = Object.keys(data)
+
             var carousel_inner = document.getElementsByClassName("carousel-inner")[0]
+            carousel_inner.innerHTML = ""
             var imgs_selected = new Set()
 
             // Carga de imágenes aleatorias, sin repetir, cada vez que se accede a la web
@@ -30,6 +32,11 @@ function loadCarouselImages() {
                     imgs_selected.add(key_id)
                 }
             }
+
+            // Una vez cargadas las imágenes activo los controladores del carrousel
+            document.getElementsByClassName("carousel-control-prev")[0].classList.remove("visually-hidden")
+            document.getElementsByClassName("carousel-control-next")[0].classList.remove("visually-hidden")
+            document.getElementsByClassName("carousel-indicators")[0].classList.remove("visually-hidden")
         })
 }
 
@@ -75,7 +82,7 @@ function createCarouselCaption(author, name) {
 }
 
 /** 
- * Crea la imagen clickable para acceder a la web de la Fototeca donde se encuentra
+ * Crea la imagen clickable 
  * @param {String} img_id - ID en la Fototeca
  * @param {String} link - Link permanente a la imagen en la Fototeca
  * @param {String} author - Autor de la imagen para construir el alt text
@@ -86,7 +93,7 @@ function createCarouselImage(img_id, link, author) {
     let img_href = document.createElement("a")
     img_href.href = link
     img_href.target = "_blank"
-    img.src = "assets/".concat(img_id, ".png")
+    img.src = "assets/".concat(img_id, ".webp")
     img.alt = "Imagen de Segovia del autor ".concat(author)
     img.classList.add("d-block", "w-100")
     img_href.appendChild(img)
